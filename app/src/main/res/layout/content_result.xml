@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnSendBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:text="Send Count Back to Main"
+        android:onClick="GoBack"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ListView
+        android:id="@+id/lstViewOrders"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnSendBack" />
+
+    <Button
+        android:id="@+id/btnSearchByPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtPriceToSearchAmount"
+        android:layout_marginTop="10dp"
+        android:text="SEARCH BY PRICE"
+        android:onClick="SearchByPrice"
+        />
+
+    <TextView
+        android:id="@+id/lblPriceToSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="27sp"
+        android:text="Price To Search"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/lstViewOrders"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/txtPriceToSearchAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lblPriceToSearch"
+        android:ems="10"
+        android:inputType="textPersonName|numberDecimal" />
+</RelativeLayout>

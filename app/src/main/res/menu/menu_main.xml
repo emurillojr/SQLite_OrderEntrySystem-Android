@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="neit.em_lab1.MainActivity">
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings" />
+    <item
+        android:id="@+id/newPlus"
+        android:icon="@drawable/ic_add_black_24dp"
+        android:orderInCategory="101"
+        android:title="newPlus"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/doubleOrder"
+        android:orderInCategory="101"
+        android:title="Double Order"
+        app:showAsAction="withText" />
+    <item
+        android:id="@+id/New2"
+        android:icon="@drawable/ic_add_black_24dp"
+        android:orderInCategory="102"
+        android:title="New"
+        app:showAsAction="withText" />
+    <item
+        android:id="@+id/getFirst"
+        android:orderInCategory="103"
+        android:title="Get First" />
+</menu>
